@@ -1,17 +1,12 @@
 .phony: install
 
-PWD=$(shell pwd)
-VIMRC="$(HOME)/.vimrc"
-BACKUP_FILE="$(HOME)/.vimrc.bak"
-UNINST_CMD="mv $(BACKUP_FILE) $(VIMRC)"
-
 install:
 	@echo "installing dash's vimrc..."
-	mv $(VIMRC) $(BACKUP_FILE) && ln -s $(PWD)/vimrc $(HOME)/.vimrc
+	bash ./install.sh install
 	@echo "done."
 
 uninst:
 	@echo "uninstalling dash's vimrc..."
-	$(UNINST_CMD)
+	bash ./install.sh uninstall
 	@echo "done."
 
