@@ -1,2 +1,2 @@
 # myvimrc
-Dash Wong's personal ~/.vimrc config
+Dash Wong's personal `~/.vimrc` config
