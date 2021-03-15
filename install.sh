@@ -8,7 +8,7 @@ SCRIPT_DIR=$(dirname $(readlink -f $0))
 ACT=$1
 
 HELP() {
-	echo "sh $0 [install]|uninstall"
+	echo "sh $0 [install|uninstall]"
 }
 
 INSTALL() {
